@@ -1,3 +1,4 @@
+/*****************************************          Header      ***************************************/
 header{
     min-height: 100vh;
     background-color: #FFFBF0;
@@ -74,7 +75,7 @@ header{
 }
 
 
-
+/*****************************************          Product Section      ***************************************/
 main{
     background-color: #ffffff;
 }
@@ -88,7 +89,7 @@ main{
 }
 .jacket-wrapper{
     width: 400px;
-    height: 600px;
+    min-height: 600px;
     border-radius: 15px;
     box-shadow: 5px 0px 20px rgba(0, 0, 0, 0.2);
     padding: 10px;
@@ -153,12 +154,6 @@ main{
     padding: 10px;
     margin-top: 5px;
 }
-
-
-
-
-
-
 #man{
     min-height: 100vh;
 }
@@ -170,7 +165,7 @@ main{
 
 
 
-
+/*****************************************          About-us      ***************************************/
 #about-us{
     min-height: 100vh;
     padding-top: 25px;
@@ -188,12 +183,224 @@ main{
     width: 80px;
     height: 80px;
 }
-
-
-
 .about-us-image{
     margin-top: 50px;
 }
 .about-us-image img{
     width: 100%;
+}
+
+
+
+
+/*****************************************          Faq Section      ***************************************/
+#faq{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin: 35px 0;
+}
+.faq-text h3{
+    font-size: 34px;
+    font-weight: 700;
+    padding-bottom: 10px;
+}
+.faq-text p{
+    padding-bottom: 35px;
+}
+.accordion{
+    width: 90%;
+    margin: 32px auto;
+}
+.accordion-item{
+    background-color: white;
+    color: #111;
+    margin: 16px 0;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.25);
+}
+.accordion-item-header{
+    padding: 50px 50px 55px 16px;
+    min-height: 55px;
+    line-height: 20px;
+    font-weight: bold;
+    border-radius: 10px;
+    outline: none;
+}
+.accordion-button:focus {
+    border-color: transparent !important;
+}
+.accordion-body{
+    padding: 3rem;
+    border-top: 1px solid;
+    line-height: 2rem;
+    background: rgba(0,0,0,0.15);
+    color: rgba(0,0,0,0.5);
+    font-weight: 700;
+}
+.faq-img img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    padding-left: 15px;
+}
+
+
+
+
+/*****************************************          Contact-Us Section      ***************************************/
+#contact-us{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.contact-us-heading h2{
+    font-family: 'Roboto';
+    font-weight: bold;
+}
+.form-group{
+    margin-bottom: 10px;
+}
+.form-group a{
+    text-decoration: none;
+    width:200px;
+    padding:13px 20px;
+    background: #2c1fa3;
+    color: white;
+    display: flex;
+    justify-self: center;
+    border-radius: 3px;
+    font-size: 17px;
+    text-align: center;
+    font-family: 'Roboto',sans-serif;
+}
+.form-group a:hover{
+    text-decoration: none;
+    color: #2c1fa3;
+    background-color: transparent;
+    border: 1px solid #2c1fa3;
+}
+.contact-us-heading h2{
+    font-size: 34px;
+    font-weight: 700;
+    padding-bottom: 40px;
+    font-family: 'Roboto',sans-serif;
+}
+.contact-us-form form{
+    padding: 40px 0;
+    width: 60%;
+    margin-left: 20%;
+}
+.contact-us-form textarea{
+    width: 100%;
+    height: 100px;
+}
+.contact-us-form textarea::placeholder{
+    padding: 10px;
+}
+/*****************************************          Responsive Design      ***************************************/
+
+@media (min-width: 320px) and (max-width: 425px){
+    header{
+        width: 160%;
+    }
+    .header-text h1{
+        font-size: 30px;
+    }
+    .jacket-wrapper{
+        margin-left: 15%;
+        margin-right: 25px;
+        margin-bottom: 25px;
+    }
+    .service{
+        width: 450px;
+    }
+    .about-us-image{
+        margin-left: 20%;
+    }
+}
+@media (min-width: 425px) and (max-width: 575px) {
+    .header-text h1{
+        font-size: 35px;
+    }
+    .jacket-wrapper{
+        margin-left: 11%;
+        width: 300px;
+        margin-bottom: 25px;
+    }
+    .jacket-img{
+        width: 260px;
+    }
+    .service{
+        width: 360px;
+    }
+}
+ @media (min-width: 576px) and (max-width: 767px) {
+    .header-text h1{
+        font-size: 32px;
+    }
+    .jacket-wrapper{
+        margin-left: 12%;
+        margin-bottom: 20px;
+    }
+    .service{
+        width: 400px;
+        margin-left: 13%;
+    }
+    .header-right img{
+        width: 50%;
+    }
+    
+} 
+@media (min-width: 768px) and (max-width: 992px){
+    .jacket-wrapper{
+        width: 335px;
+        height: 650px;
+        margin-bottom: 35px;
+    }
+    .jacket-img{
+        width: 295px;
+    }
+    .header-text h1{
+        font-size: 31px;
+    }
+    .service{
+        width: 400px;
+    }
+    .about-us-image img{
+        margin-left: 100px;
+        width: 80%;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1200px){
+    .jacket-wrapper{
+        width: 300px;
+    }
+    .jacket-img{
+        width: 260px;
+    }
+    .jacket-btn{
+        width: 140px;
+        height: 55px;
+    }
+    .jacket-content h2{
+        font-size: 20px;
+    }
+    .about-us-image{
+        width: 80%;
+        margin-left: 45px;
+    }
+}
+
+@media (min-width: 1200px) and (max-width: 1400px){
+    .jacket-wrapper{
+        width: 360px;
+    }
+    .jacket-img{
+        width: 320px;
+    }
 }
